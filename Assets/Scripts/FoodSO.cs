@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 [Serializable]
 [CreateAssetMenu(fileName = "Food", menuName = "Scriptable Objects/Food")]
 public class FoodSO : ScriptableObject
@@ -12,5 +13,3 @@ public class FoodSO : ScriptableObject
     [SerializeField] public List<IngredientSO> NeededIngredients;
     [SerializeField] public List<Category> NeededCategories;
 }
-
-

@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+
+/*
 [Serializable]
 public class Preparator2 : Preparator
 {
@@ -9,3 +11,4 @@ public class Preparator2 : Preparator
         return new PreparedIngredient(PreparationMethod,new List<Ingredient>(){ingredient1,ingredient2});
     }
 }
+*/

@@ -1,11 +1,13 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+
+
 [Serializable]
 public class PreparedIngredient
 {
     public PreparationMethod PreparationMethod;
-    public List<Ingredient> Ingredients;
+    public List<IngredientSO> Ingredients;
     public string Name => FoodSystemStaticFields.PreperationMethodNameDictionary[PreparationMethod];
     public Sprite Sprite
     {
@@ -13,7 +15,7 @@ public class PreparedIngredient
         {
             if (PreparationMethod == PreparationMethod.Chopped)
             {
-                return FoodSystemStaticFields.ChoppedIngredientCategorySpriteDictionary[Ingredients[0].IngredientSO.Category];
+                return FoodSystemStaticFields.ChoppedIngredientCategorySpriteDictionary[Ingredients[0].Category];
             }
             else
             {
@@ -21,7 +23,7 @@ public class PreparedIngredient
             }
         }
     }
-    public PreparedIngredient(PreparationMethod preparationMethod,List<Ingredient> ingredients)
+    public PreparedIngredient(PreparationMethod preparationMethod,List<IngredientSO> ingredients)
     {
         PreparationMethod = preparationMethod;
         Ingredients = ingredients;

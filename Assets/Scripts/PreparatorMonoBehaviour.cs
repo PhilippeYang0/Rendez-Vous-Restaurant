@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+/*
 [Serializable]
 public class Preparator : MonoBehaviour
 {
@@ -21,3 +22,4 @@ public class Preparator : MonoBehaviour
     }
 
 }
+*/
